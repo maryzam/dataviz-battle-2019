@@ -1,0 +1,45 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: content-box;
+	font-family: 'Roboto', sans-serif;
+	color: #dadada;
+}
+
+html, body {
+	height: 100vh;
+	width: 100%;
+	background: black;
+}
+
+article {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+header, footer {
+    flex-shrink: 0;
+    text-align: center;
+    padding: 10px;
+    background: #212121;
+}
+
+main {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.map {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.country {
+	fill: #777;
+	stroke: black;
+	stroke-width: 1px;
+}
