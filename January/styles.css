@@ -39,7 +39,27 @@ main {
 }
 
 .country {
-	fill: #777;
+	fill: #333;
 	stroke: black;
 	stroke-width: 1px;
+}
+
+.life path {
+	stroke: tomato;
+	stroke-width: 1px;
+	fill: none;
+}
+
+.female path {
+	stroke: #cb2d6f;
+}
+
+.male path {
+	stroke: #14a098;
+}
+
+.life path.star {
+	fill: gold;
+	fill-opacity: 0.5;
+	stroke: none;
 }
