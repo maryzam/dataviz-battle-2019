@@ -1,0 +1,1302 @@
+[
+  {
+    "Order": "1",
+    "Name": "Betsy Baker",
+    "Born": "1842",
+    "Birthplace": "United Kingdom",
+    "BirthplaceCoords": [
+      -3.288263,
+      54.500945
+    ],
+    "Died": "1905",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "113.18",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 1
+  },
+  {
+    "Order": "2",
+    "Name": "Jennie Howell",
+    "Born": "1845",
+    "Birthplace": "United Kingdom",
+    "BirthplaceCoords": [
+      -3.288263,
+      54.500945
+    ],
+    "Died": "1956",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "111.85",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 1.14
+  },
+  {
+    "Order": "3",
+    "Name": "Anne Marie Carstenson",
+    "Born": "1849",
+    "Birthplace": "Denmark",
+    "BirthplaceCoords": [
+      9.431042,
+      56.107772
+    ],
+    "Died": "1958",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "109.18",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 1.28
+  },
+  {
+    "Order": "4",
+    "Name": "Nancy Ryan",
+    "Born": "1849",
+    "Birthplace": "USA",
+    "BirthplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Died": "1958",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "109.12",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.55
+  },
+  {
+    "Order": "5",
+    "Name": "Christina Karnebeek-Backs",
+    "Born": "1849",
+    "Birthplace": "Netherlands",
+    "BirthplaceCoords": [
+      5.603461,
+      52.062644
+    ],
+    "Died": "1959",
+    "Deathplace": "Netherlands",
+    "DeathplaceCoords": [
+      5.603461,
+      52.062644
+    ],
+    "Age": "110.01",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.97
+  },
+  {
+    "Order": "6",
+    "Name": "Marie Olsen",
+    "Born": "1850",
+    "Birthplace": "Norway",
+    "BirthplaceCoords": [
+      9.469664,
+      61.374022
+    ],
+    "Died": "1959",
+    "Deathplace": "Norway",
+    "DeathplaceCoords": [
+      9.469664,
+      61.374022
+    ],
+    "Age": "109.57",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.13
+  },
+  {
+    "Order": "7",
+    "Name": "Mary Kelly",
+    "Born": "1851",
+    "Birthplace": "USA",
+    "BirthplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Died": "1964",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "113.56",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 5.1
+  },
+  {
+    "Order": "8",
+    "Name": "Elizabeth Kensley",
+    "Born": "1855",
+    "Birthplace": "United Kingdom",
+    "BirthplaceCoords": [
+      -3.288263,
+      54.500945
+    ],
+    "Died": "1965",
+    "Deathplace": "United Kingdom",
+    "DeathplaceCoords": [
+      -3.288263,
+      54.500945
+    ],
+    "Age": "109.82",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.18
+  },
+  {
+    "Order": "9",
+    "Name": "William Fullingim",
+    "Born": "1855",
+    "Birthplace": "USA",
+    "BirthplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Died": "1965",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "110.08",
+    "Race": "White",
+    "Sex": "M",
+    "Duration": 0.42
+  },
+  {
+    "Order": "10",
+    "Name": "Hannah Smith",
+    "Born": "1856",
+    "Birthplace": "United Kingdom",
+    "BirthplaceCoords": [
+      -3.288263,
+      54.500945
+    ],
+    "Died": "1966",
+    "Deathplace": "United Kingdom",
+    "DeathplaceCoords": [
+      -3.288263,
+      54.500945
+    ],
+    "Age": "110.01",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.43
+  },
+  {
+    "Order": "11",
+    "Name": "John Turner",
+    "Born": "1856",
+    "Birthplace": "United Kingdom",
+    "BirthplaceCoords": [
+      -3.288263,
+      54.500945
+    ],
+    "Died": "1968",
+    "Deathplace": "United Kingdom",
+    "DeathplaceCoords": [
+      -3.288263,
+      54.500945
+    ],
+    "Age": "111.77",
+    "Race": "White",
+    "Sex": "M",
+    "Duration": 2.19
+  },
+  {
+    "Order": "12",
+    "Name": "Johanna Booysen",
+    "Born": "1857",
+    "Birthplace": "South Africa",
+    "BirthplaceCoords": [
+      24.110539,
+      -29.599707
+    ],
+    "Died": "1968",
+    "Deathplace": "South Africa",
+    "DeathplaceCoords": [
+      24.110539,
+      -29.599707
+    ],
+    "Age": "111.41",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.24
+  },
+  {
+    "Order": "13",
+    "Name": "Marie Bernatkova",
+    "Born": "1857",
+    "Birthplace": "Czechoslovakia",
+    "BirthplaceCoords": [
+      14.439555,
+      50.063905
+    ],
+    "Died": "1969",
+    "Deathplace": "Czechoslovakia",
+    "DeathplaceCoords": [
+      14.439555,
+      50.063905
+    ],
+    "Age": "111.53",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.88
+  },
+  {
+    "Order": "14",
+    "Name": "Ada Roe",
+    "Born": "1858",
+    "Birthplace": "United Kingdom",
+    "BirthplaceCoords": [
+      -3.288263,
+      54.500945
+    ],
+    "Died": "1970",
+    "Deathplace": "United Kingdom",
+    "DeathplaceCoords": [
+      -3.288263,
+      54.500945
+    ],
+    "Age": "111.93",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.69
+  },
+  {
+    "Order": "15",
+    "Name": "Josefa Salas Mateo",
+    "Born": "1860",
+    "Birthplace": "Spain",
+    "BirthplaceCoords": [
+      -3.473459,
+      40.001616
+    ],
+    "Died": "1973",
+    "Deathplace": "Spain",
+    "DeathplaceCoords": [
+      -3.473459,
+      40.001616
+    ],
+    "Age": "112.62",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 3.13
+  },
+  {
+    "Order": "16",
+    "Name": "Alice Stevenson",
+    "Born": "1861",
+    "Birthplace": "United Kingdom",
+    "BirthplaceCoords": [
+      -3.288263,
+      54.500945
+    ],
+    "Died": "1973",
+    "Deathplace": "United Kingdom",
+    "DeathplaceCoords": [
+      -3.288263,
+      54.500945
+    ],
+    "Age": "112.11",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.47
+  },
+  {
+    "Order": "17",
+    "Name": "Elizabeth Watkins",
+    "Born": "1863",
+    "Birthplace": "United Kingdom",
+    "BirthplaceCoords": [
+      -3.288263,
+      54.500945
+    ],
+    "Died": "1973",
+    "Deathplace": "United Kingdom",
+    "DeathplaceCoords": [
+      -3.288263,
+      54.500945
+    ],
+    "Age": "110.64",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.2
+  },
+  {
+    "Order": "18",
+    "Name": "Mito Umeta",
+    "Born": "1863",
+    "Birthplace": "Japan",
+    "BirthplaceCoords": [
+      137.90287,
+      36.045534
+    ],
+    "Died": "1975",
+    "Deathplace": "Japan",
+    "DeathplaceCoords": [
+      137.90287,
+      36.045534
+    ],
+    "Age": "112.18",
+    "Race": "East Asian",
+    "Sex": "F",
+    "Duration": 1.58
+  },
+  {
+    "Order": "19",
+    "Name": "Niwa Kawamoto",
+    "Born": "1863",
+    "Birthplace": "Japan",
+    "BirthplaceCoords": [
+      137.90287,
+      36.045534
+    ],
+    "Died": "1976",
+    "Deathplace": "Japan",
+    "DeathplaceCoords": [
+      137.90287,
+      36.045534
+    ],
+    "Age": "113.28",
+    "Race": "East Asian",
+    "Sex": "F",
+    "Duration": 1.46
+  },
+  {
+    "Order": "20",
+    "Name": "Sophia De Muth",
+    "Born": "1866",
+    "Birthplace": "USA",
+    "BirthplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Died": "1977",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "111.42",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 1.04
+  },
+  {
+    "Order": "21",
+    "Name": "Marie-Virginie Duhem",
+    "Born": "1866",
+    "Birthplace": "France",
+    "BirthplaceCoords": [
+      2.303166,
+      47.038598
+    ],
+    "Died": "1978",
+    "Deathplace": "France",
+    "DeathplaceCoords": [
+      2.303166,
+      47.038598
+    ],
+    "Age": "111.73",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.39
+  },
+  {
+    "Order": "22",
+    "Name": "Fannie Thomas",
+    "Born": "1867",
+    "Birthplace": "USA",
+    "BirthplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Died": "1981",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "113.78",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 2.75
+  },
+  {
+    "Order": "23",
+    "Name": "Augustine Teissier",
+    "Born": "1869",
+    "Birthplace": "France",
+    "BirthplaceCoords": [
+      2.303166,
+      47.038598
+    ],
+    "Died": "1981",
+    "Deathplace": "France",
+    "DeathplaceCoords": [
+      2.303166,
+      47.038598
+    ],
+    "Age": "112.18",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.12
+  },
+  {
+    "Order": "24",
+    "Name": "Nellie Spencer",
+    "Born": "1869",
+    "Birthplace": "USA",
+    "BirthplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Died": "1982",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "113.22",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 1.68
+  },
+  {
+    "Order": "25",
+    "Name": "Emma Wilson",
+    "Born": "1870",
+    "Birthplace": "USA",
+    "BirthplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Died": "1983",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "113.42",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.92
+  },
+  {
+    "Order": "26",
+    "Name": "Mathew Beard",
+    "Born": "1870",
+    "Birthplace": "USA",
+    "BirthplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Died": "1985",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "114.61",
+    "Race": "Black",
+    "Sex": "M",
+    "Duration": 1.35
+  },
+  {
+    "Order": "27",
+    "Name": "Augusta Holtz",
+    "Born": "1871",
+    "Birthplace": "Germany",
+    "BirthplaceCoords": [
+      10.252932,
+      50.640118
+    ],
+    "Died": "1986",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "115.22",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 1.68
+  },
+  {
+    "Order": "28",
+    "Name": "Mary McKinney",
+    "Born": "1873",
+    "Birthplace": "USA",
+    "BirthplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Died": "1987",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "113.68",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.28
+  },
+  {
+    "Order": "29",
+    "Name": "Anna Eliza Williams",
+    "Born": "1873",
+    "Birthplace": "United Kingdom",
+    "BirthplaceCoords": [
+      -3.288263,
+      54.500945
+    ],
+    "Died": "1987",
+    "Deathplace": "United Kingdom",
+    "DeathplaceCoords": [
+      -3.288263,
+      54.500945
+    ],
+    "Age": "114.57",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.9
+  },
+  {
+    "Order": "30",
+    "Name": "Florence Knapp",
+    "Born": "1873",
+    "Birthplace": "USA",
+    "BirthplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Died": "1988",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "114.25",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.04
+  },
+  {
+    "Order": "31",
+    "Name": "Jeanne Calment",
+    "Born": "1875",
+    "Birthplace": "France",
+    "BirthplaceCoords": [
+      2.303166,
+      47.038598
+    ],
+    "Died": "1997",
+    "Deathplace": "France",
+    "DeathplaceCoords": [
+      2.303166,
+      47.038598
+    ],
+    "Age": "122.45",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 9.56
+  },
+  {
+    "Order": "32",
+    "Name": "Marie-Louise Meilleur",
+    "Born": "1880",
+    "Birthplace": "Canada",
+    "BirthplaceCoords": [
+      -86.138604,
+      51.027258
+    ],
+    "Died": "1998",
+    "Deathplace": "Canada",
+    "DeathplaceCoords": [
+      -86.138604,
+      51.027258
+    ],
+    "Age": "117.63",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.7
+  },
+  {
+    "Order": "33",
+    "Name": "Sarah Knauss",
+    "Born": "1880",
+    "Birthplace": "USA",
+    "BirthplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Died": "1999",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "119.27",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 1.71
+  },
+  {
+    "Order": "34",
+    "Name": "Eva Morris",
+    "Born": "1885",
+    "Birthplace": "United Kingdom",
+    "BirthplaceCoords": [
+      -3.288263,
+      54.500945
+    ],
+    "Died": "2000",
+    "Deathplace": "United Kingdom",
+    "DeathplaceCoords": [
+      -3.288263,
+      54.500945
+    ],
+    "Age": "114.99",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.84
+  },
+  {
+    "Order": "35",
+    "Name": "Marie Bremont",
+    "Born": "1886",
+    "Birthplace": "France",
+    "BirthplaceCoords": [
+      2.303166,
+      47.038598
+    ],
+    "Died": "2001",
+    "Deathplace": "France",
+    "DeathplaceCoords": [
+      2.303166,
+      47.038598
+    ],
+    "Age": "115.12",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.59
+  },
+  {
+    "Order": "36",
+    "Name": "Maud Farris-Luse",
+    "Born": "1887",
+    "Birthplace": "USA",
+    "BirthplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Died": "2002",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "115.15",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.78
+  },
+  {
+    "Order": "37",
+    "Name": "Grace Clawson",
+    "Born": "1887",
+    "Birthplace": "United Kingdom",
+    "BirthplaceCoords": [
+      -3.288263,
+      54.500945
+    ],
+    "Died": "2002",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "114.53",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.19
+  },
+  {
+    "Order": "38",
+    "Name": "Adelina Domingues",
+    "Born": "1888",
+    "Birthplace": "Cape Verde",
+    "BirthplaceCoords": [
+      -23.614189,
+      15.076005
+    ],
+    "Died": "2002",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "114.5",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.23
+  },
+  {
+    "Order": "39",
+    "Name": "Mae Harrington",
+    "Born": "1889",
+    "Birthplace": "USA",
+    "BirthplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Died": "2002",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "113.94",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.36
+  },
+  {
+    "Order": "40",
+    "Name": "Yukichi Chuganji",
+    "Born": "1889",
+    "Birthplace": "Japan",
+    "BirthplaceCoords": [
+      137.90287,
+      36.045534
+    ],
+    "Died": "2003",
+    "Deathplace": "Japan",
+    "DeathplaceCoords": [
+      137.90287,
+      36.045534
+    ],
+    "Age": "114.52",
+    "Race": "East Asian",
+    "Sex": "M",
+    "Duration": 0.75
+  },
+  {
+    "Order": "41",
+    "Name": "Mitoyo Kawate",
+    "Born": "1889",
+    "Birthplace": "Japan",
+    "BirthplaceCoords": [
+      137.90287,
+      36.045534
+    ],
+    "Died": "2003",
+    "Deathplace": "Japan",
+    "DeathplaceCoords": [
+      137.90287,
+      36.045534
+    ],
+    "Age": "114.5",
+    "Race": "East Asian",
+    "Sex": "F",
+    "Duration": 0.13
+  },
+  {
+    "Order": "42",
+    "Name": "Ramona Trinidad Iglesias-Jordan",
+    "Born": "1889",
+    "Birthplace": "Puerto Rico",
+    "BirthplaceCoords": [
+      -66.480948,
+      18.247915
+    ],
+    "Died": "2004",
+    "Deathplace": "Puerto Rico",
+    "DeathplaceCoords": [
+      -66.480948,
+      18.247915
+    ],
+    "Age": "114.75",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.54
+  },
+  {
+    "Order": "43",
+    "Name": "Maria Esther de Capovilla",
+    "Born": "1889",
+    "Birthplace": "Ecuador",
+    "BirthplaceCoords": [
+      -78.521025,
+      -0.899208
+    ],
+    "Died": "2006",
+    "Deathplace": "Ecuador",
+    "DeathplaceCoords": [
+      -78.521025,
+      -0.899208
+    ],
+    "Age": "116.95",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 2.25
+  },
+  {
+    "Order": "44",
+    "Name": "Elizabeth Bolden",
+    "Born": "1890",
+    "Birthplace": "USA",
+    "BirthplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Died": "2006",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "116.32",
+    "Race": "Black",
+    "Sex": "F",
+    "Duration": 0.29
+  },
+  {
+    "Order": "45",
+    "Name": "Emiliano Mercado Del Toro",
+    "Born": "1891",
+    "Birthplace": "Puerto Rico",
+    "BirthplaceCoords": [
+      -66.480948,
+      18.247915
+    ],
+    "Died": "2007",
+    "Deathplace": "Puerto Rico",
+    "DeathplaceCoords": [
+      -66.480948,
+      18.247915
+    ],
+    "Age": "115.43",
+    "Race": "Hispanic",
+    "Sex": "M",
+    "Duration": 0.12
+  },
+  {
+    "Order": "46",
+    "Name": "Emma Tillman",
+    "Born": "1892",
+    "Birthplace": "USA",
+    "BirthplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Died": "2007",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "114.18",
+    "Race": "Black",
+    "Sex": "F",
+    "Duration": 0.01
+  },
+  {
+    "Order": "47",
+    "Name": "Yone Minagawa",
+    "Born": "1893",
+    "Birthplace": "Japan",
+    "BirthplaceCoords": [
+      137.90287,
+      36.045534
+    ],
+    "Died": "2007",
+    "Deathplace": "Japan",
+    "DeathplaceCoords": [
+      137.90287,
+      36.045534
+    ],
+    "Age": "114.61",
+    "Race": "East Asian",
+    "Sex": "F",
+    "Duration": 0.54
+  },
+  {
+    "Order": "48",
+    "Name": "Edna Parker",
+    "Born": "1893",
+    "Birthplace": "USA",
+    "BirthplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Died": "2008",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "115.6",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 1.29
+  },
+  {
+    "Order": "49",
+    "Name": "Maria de Jesus",
+    "Born": "1893",
+    "Birthplace": "Portugal",
+    "BirthplaceCoords": [
+      9.469664,
+      61.374022
+    ],
+    "Died": "2009",
+    "Deathplace": "Portugal",
+    "DeathplaceCoords": [
+      9.469664,
+      61.374022
+    ],
+    "Age": "115.31",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.1
+  },
+  {
+    "Order": "50",
+    "Name": "Gertrude Baines",
+    "Born": "1894",
+    "Birthplace": "USA",
+    "BirthplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Died": "2009",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "115.43",
+    "Race": "Black",
+    "Sex": "F",
+    "Duration": 0.69
+  },
+  {
+    "Order": "51",
+    "Name": "Kama Chinen",
+    "Born": "1895",
+    "Birthplace": "Japan",
+    "BirthplaceCoords": [
+      137.90287,
+      36.045534
+    ],
+    "Died": "2010",
+    "Deathplace": "Japan",
+    "DeathplaceCoords": [
+      137.90287,
+      36.045534
+    ],
+    "Age": "114.98",
+    "Race": "East Asian",
+    "Sex": "F",
+    "Duration": 0.64
+  },
+  {
+    "Order": "52",
+    "Name": "Eugenie Blanchard",
+    "Born": "1896",
+    "Birthplace": "France",
+    "BirthplaceCoords": [
+      2.303166,
+      47.038598
+    ],
+    "Died": "2010",
+    "Deathplace": "France",
+    "DeathplaceCoords": [
+      2.303166,
+      47.038598
+    ],
+    "Age": "114.72",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.51
+  },
+  {
+    "Order": "53",
+    "Name": "Maria Gomes Valentim",
+    "Born": "1896",
+    "Birthplace": "Brazil",
+    "BirthplaceCoords": [
+      -53.844174,
+      -10.069827
+    ],
+    "Died": "2011",
+    "Deathplace": "Brazil",
+    "DeathplaceCoords": [
+      -53.844174,
+      -10.069827
+    ],
+    "Age": "114.95",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.63
+  },
+  {
+    "Order": "54",
+    "Name": "Besse Cooper",
+    "Born": "1896",
+    "Birthplace": "USA",
+    "BirthplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Died": "2012",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "116.27",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 1.45
+  },
+  {
+    "Order": "55",
+    "Name": "Dina Manfredini",
+    "Born": "1896",
+    "Birthplace": "Italy",
+    "BirthplaceCoords": [
+      12.764245,
+      42.596019
+    ],
+    "Died": "2012",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "115.7",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.04
+  },
+  {
+    "Order": "56",
+    "Name": "Jiroemon Kimura",
+    "Born": "1897",
+    "Birthplace": "Japan",
+    "BirthplaceCoords": [
+      137.90287,
+      36.045534
+    ],
+    "Died": "2013",
+    "Deathplace": "Japan",
+    "DeathplaceCoords": [
+      137.90287,
+      36.045534
+    ],
+    "Age": "116.15",
+    "Race": "East Asian",
+    "Sex": "M",
+    "Duration": 0.48
+  },
+  {
+    "Order": "57",
+    "Name": "Misao Okawa",
+    "Born": "1898",
+    "Birthplace": "Japan",
+    "BirthplaceCoords": [
+      137.90287,
+      36.045534
+    ],
+    "Died": "2015",
+    "Deathplace": "Japan",
+    "DeathplaceCoords": [
+      137.90287,
+      36.045534
+    ],
+    "Age": "117.07",
+    "Race": "East Asian",
+    "Sex": "F",
+    "Duration": 1.8
+  },
+  {
+    "Order": "58",
+    "Name": "Gertrude Weaver",
+    "Born": "1898",
+    "Birthplace": "USA",
+    "BirthplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Died": "2015",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "116.76",
+    "Race": "Multiracial",
+    "Sex": "F",
+    "Duration": 0.01
+  },
+  {
+    "Order": "59",
+    "Name": "Jeralean Talley",
+    "Born": "1899",
+    "Birthplace": "USA",
+    "BirthplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Died": "2015",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "116.07",
+    "Race": "Black",
+    "Sex": "F",
+    "Duration": 0.2
+  },
+  {
+    "Order": "60",
+    "Name": "Susannah Mushatt Jones",
+    "Born": "1899",
+    "Birthplace": "USA",
+    "BirthplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Died": "2016",
+    "Deathplace": "USA",
+    "DeathplaceCoords": [
+      -98.836951,
+      38.224768
+    ],
+    "Age": "116.85",
+    "Race": "Black",
+    "Sex": "F",
+    "Duration": 0.9
+  },
+  {
+    "Order": "61",
+    "Name": "Emma Morano",
+    "Born": "1899",
+    "Birthplace": "Italy",
+    "BirthplaceCoords": [
+      12.764245,
+      42.596019
+    ],
+    "Died": "2017",
+    "Deathplace": "Italy",
+    "DeathplaceCoords": [
+      12.764245,
+      42.596019
+    ],
+    "Age": "117.38",
+    "Race": "White",
+    "Sex": "F",
+    "Duration": 0.92
+  },
+  {
+    "Order": "62",
+    "Name": "Violet Brown",
+    "Born": "1900",
+    "Birthplace": "Jamaica",
+    "BirthplaceCoords": [
+      -77.38002,
+      18.212578
+    ],
+    "Died": "2017",
+    "Deathplace": "Jamaica",
+    "DeathplaceCoords": [
+      -77.38002,
+      18.212578
+    ],
+    "Age": "117.52",
+    "Race": "Black",
+    "Sex": "F",
+    "Duration": 0.42
+  },
+  {
+    "Order": "63",
+    "Name": "Nabi Tajima",
+    "Born": "1900",
+    "Birthplace": "Japan",
+    "BirthplaceCoords": [
+      137.90287,
+      36.045534
+    ],
+    "Died": "2018",
+    "Deathplace": "Japan",
+    "DeathplaceCoords": [
+      137.90287,
+      36.045534
+    ],
+    "Age": "117.71",
+    "Race": "East Asian",
+    "Sex": "F",
+    "Duration": 0.6
+  },
+  {
+    "Order": "64",
+    "Name": "Chiyo Miyako",
+    "Born": "1901",
+    "Birthplace": "Japan",
+    "BirthplaceCoords": [
+      137.90287,
+      36.045534
+    ],
+    "Died": "2018",
+    "Deathplace": "Japan",
+    "DeathplaceCoords": [
+      137.90287,
+      36.045534
+    ],
+    "Age": "117.22",
+    "Race": "East Asian",
+    "Sex": "F",
+    "Duration": 0.25
+  },
+  {
+    "Order": "65",
+    "Name": "Kane Tanaka",
+    "Born": "1903",
+    "Birthplace": "Japan",
+    "BirthplaceCoords": [
+      137.90287,
+      36.045534
+    ],
+    "Died": "N/A",
+    "Deathplace": "Japan",
+    "DeathplaceCoords": [
+      137.90287,
+      36.045534
+    ],
+    "Age": "115.59",
+    "Race": "East Asian",
+    "Sex": "F",
+    "Duration": 1
+  }
+]

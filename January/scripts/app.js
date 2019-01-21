@@ -1,23 +1,12 @@
 const margin = 10;
 const minWeight = 5;
 
-const parseCoords = (coords) => {
-	return coords.replace("[", "")
-		.replace("]", "")
-		.split(",")
-		.map((part) => +part);
-}
-
 Promise.all([
 	d3.json("data/world.json"),
-	d3.tsv("data/oldest_people.tsv")
+	d3.json("data/oldest_people.json")
 ]).then((values) => {
-		const oldPeople = values[1];
-		oldPeople.forEach((person) => {
-			person.BirthplaceCoords = parseCoords(person.BirthplaceCoords);
-			person.DeathplaceCoords = parseCoords(person.DeathplaceCoords);
-		});
 		const worldMap = topojson.presimplify(values[0]);
+		const oldPeople = values[1];
 
 		// prepare container
 		const container = d3.select(".map");
@@ -65,16 +54,20 @@ Promise.all([
         const offsets = {};
 
         const lifePath = (d) => {
-        	let offset = 30;
-        	if (d.Birthplace === d.Deathplace) 
-        	{
-        		offsets[d.Birthplace] = (offsets[d.Birthplace] || 30) + 5;
-        		offset = offsets[d.Birthplace];
-        	}
-        	const from = projection([d.BirthplaceCoords[1],d.BirthplaceCoords[0]]);
-        	const till = projection([d.DeathplaceCoords[1],d.DeathplaceCoords[0]]);
+        	const from = projection(d.BirthplaceCoords);
+        	const till = projection(d.DeathplaceCoords);
 
-        	return `M ${from[0]} ${from[1]} C ${from[0] - offset} ${from[1] - offset} ${till[0] + offset} ${till[1] - offset} ${till[0]} ${till[1]}`;
+        	let qHeight = 0;
+        	let offset = 50;
+        	if (d.Birthplace === d.Deathplace) {
+        		offsets[d.Birthplace] = (offsets[d.Birthplace] || 10) + 5;
+        		offset = offsets[d.Birthplace];
+        		qHeight = from[1] + offset;
+        	} else {
+        		qHeight = Math.max(from[1], till[1]) + offset;
+        	}
+
+        	return `M ${from[0]} ${from[1]} C ${from[0] - offset} ${qHeight} ${till[0] + offset} ${qHeight} ${till[0]} ${till[1]}`;
         };
 
 		const lifes = svg
