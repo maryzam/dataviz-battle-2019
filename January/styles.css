@@ -51,12 +51,24 @@ main {
 	fill: none;
 }
 
+.life text {
+	font-size: 10px;
+} 
+
 .female path {
 	stroke: #cb2d6f;
 }
 
 .male path {
 	stroke: #14a098;
+}
+
+.female text {
+	fill: #cb2d6f;
+}
+
+.male text {
+	fill: : #14a098;
 }
 
 .life path.star {

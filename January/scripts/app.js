@@ -17,20 +17,6 @@ Promise.all([
 					.append("svg")
 					.attr("width", width)
 					.attr("height", height);
-		//add defs
-		svg
-			.append("defs")
-			.append("marker")
-				.attr("id", "arrow")
-				.attr('markerHeight', 5)
-		        .attr('markerWidth', 5)
-		        .attr('markerUnits', 'strokeWidth')
-		        .attr('orient', 'auto')
-		        .attr('refX', 0)
-		        .attr('refY', 0)
-		    .append("path")
-		    	.attr("d", "M 0,0 m -5,-5 L 5,0 L -5,5 Z")
-		    	.style("fill", "blue");
 
 		//prepare & render world map
 		const projection = d3.geoFahey()
@@ -70,6 +56,15 @@ Promise.all([
         	return `M ${from[0]} ${from[1]} C ${from[0] - offset} ${qHeight} ${till[0] + offset} ${qHeight} ${till[0]} ${till[1]}`;
         };
 
+        svg
+        	.append("defs")
+        	.selectAll("path")
+        	.data(oldPeople.filter((d) => d.Birthplace !== d.Deathplace))
+        		.enter()
+        	.append("path")
+        		.attr("id", (d) => `textPath_${d.Order}`)
+        		.attr("d", lifePath);
+
 		const lifes = svg
         				.append("g")
         				.selectAll("g", "life")
@@ -77,9 +72,20 @@ Promise.all([
         					.enter()
         				.append("g")
         					.attr("class", (d) => `life ${ (d.Sex === "F") ? "female" : "male" }`);
-        lifes
+         lifes
         	.append("path")
         	.attr("d", lifePath);
+
+
+
+        lifes
+        	.filter((d) => d.Birthplace !== d.Deathplace)
+        	.append("text")
+        		.attr("dy", "3.5px")
+        	.append("textPath")
+        	.text("▶")
+        	.attr("xlink:href", (d) => `#textPath_${d.Order}`)
+        	.attr("startOffset", "30%");
 
         /*
         const starPath = d3.symbol()
