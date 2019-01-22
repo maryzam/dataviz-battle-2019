@@ -1,6 +1,10 @@
 const margin = 10;
 const minWeight = 5;
-const animDuration = 1000;
+const animDuration = 200;
+
+const formatPlace = (d) => {
+	return (d.Birthplace == d.Deathplace) ? d.Birthplace : `${d.Birthplace} / ${d.Deathplace}`;
+}
 
 Promise.all([
 	d3.json("data/world.json"),
@@ -10,8 +14,8 @@ Promise.all([
 		const oldPeople = values[1];
 		let stackedDuration = 0;
 		oldPeople.forEach(person => {
-			person["stackedDuration"] = stackedDuration;
-			stackedDuration = stackedDuration + person.Duration;
+			person["stackedDuration"] = stackedDuration +person.Duration;
+			stackedDuration = person["stackedDuration"];
 			person.Order = +person.Order - 1;
 		});
 
@@ -33,10 +37,6 @@ Promise.all([
 		const geo = topojson.simplify(worldMap, minWeight);
 		const countries = topojson.feature(geo, geo.objects.countries).features;
 		const geoPath = d3.geoPath().projection(projection);
-
-        const labelContainer = svg
-        				.append("g")
-        				.attr("class", "label");
 
 		const mapContainer = svg.append("g")
 								.attr("class", "map")
@@ -76,7 +76,7 @@ Promise.all([
         	return path;
         };
 
-		const lifes = svg
+		const lifes = mapContainer
         				.append("g")
         				.selectAll("g", "life")
         				.data(oldPeople)
@@ -84,8 +84,6 @@ Promise.all([
         				.append("g")
         					.attr("class", (d) => `life ${ (d.Sex === "F") ? "female" : "male" }`)
         					.attr("opacity", 0);
-
-
         lifes
         	.append("path")
         	.attr("class", "life-path")
@@ -114,9 +112,30 @@ Promise.all([
         let counter = 0;
         let current = 0;
 
-        const label = svg
+       	const labelColor = (d, i) => (d.Sex == "F") ? "#cb2d6f" : "#14a098";
+       	const formatLabelData = (person, year) => ([
+       			{ text: year },
+       			{
+        			color: labelColor(oldPeople[current]),
+        			text: oldPeople[current].Name 
+        		}, 
+        		{ text: formatPlace(oldPeople[current]) }
+        	]);
+
+        const labelContainer = svg
         				.append("g")
-        				.attr("class", "label")
+        					.attr("class", "label")
+        					.attr("transform", `translate(${width / 2}, ${ height * 0.6 })`)
+        				.append("text");
+
+        labelContainer
+        		.selectAll("tspan")
+        			.data(formatLabelData(oldPeople[current], year), d => d && d.text)
+        		.enter()
+        		.append("tspan")
+        			.text((d) => d.text)
+        			.attr("dx", 20)
+        			.style("fill", d => d.color || "#dadada");
 
         const timer = setInterval(() => {
 
@@ -128,15 +147,37 @@ Promise.all([
 
         	lifes
         		.select("path")
-        		.transition(animDuration)
-        		.style("stroke-width", d => (d.Order == current) ? "5" : "1");
+        		//.transition(animDuration)
+        		.style("stroke-width", d => (d.Order == current) ? "3" : "1");
 
-        	counter = counter + 0.1;
-        	year = Math.floor(1955 + counter);
+        	const prevYear = year;
+        	year = Math.floor(1954 + counter);
+        	let needUpdateLabel = prevYear !== year;
         	if (oldPeople[current].stackedDuration < counter) {
         		current = current + 1;
+        		needUpdateLabel = true;
+        		if (current == oldPeople.length) {
+        			clearTimeout(timer);
+        			return;
+        		}
         	}
-        }, 100);
+
+        	if (needUpdateLabel) {
+        		const labels =labelContainer
+        			.selectAll("tspan")
+        			.data(formatLabelData(oldPeople[current], year), d => d && d.text)
+	        			
+	        	labels.exit().remove();
+	        	labels.enter()
+	        		.append("tspan")
+	        			.text(d => d.text)
+	        			.attr("dx", 20)
+	        			.style("fill", d => d.color);
+        	}
+
+        	counter = counter + 0.1;
+
+        }, 200);
 
 
 	}).catch((e) => console.error(error))

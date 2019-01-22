@@ -64,7 +64,7 @@ main {
 	stroke: #14a098;
 }
 
-.female text {
+.female text  {
 	fill: #cb2d6f;
 }
 
@@ -76,4 +76,17 @@ main {
 	fill: gold;
 	fill-opacity: 0.5;
 	stroke: none;
+}
+
+.label text {
+	text-anchor: middle;
+	fill: #dadada;
+}
+
+.label tspan.female {
+	fill: #cb2d6f;
+}
+
+.label tspan.male {
+	fill: : #14a098;
 }
