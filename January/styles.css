@@ -47,12 +47,13 @@ main {
 
 .life path {
 	stroke: tomato;
-	stroke-width: 1px;
+	stroke-width: 5px;
 	fill: none;
 }
 
 .life text {
 	font-size: 10px;
+	pointer-events: none;
 } 
 
 .female path {
