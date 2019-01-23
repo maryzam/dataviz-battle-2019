@@ -1,24 +1,26 @@
 const margin = 10;
-const minWeight = 5;
 const animDuration = 200;
 
-const formatPlace = (d) => {
-	return (d.Birthplace == d.Deathplace) ? d.Birthplace : `${d.Birthplace} / ${d.Deathplace}`;
-}
+const formatPlace = (person) => (
+	(person.Birthplace == person.Deathplace) 
+		? person.Birthplace 
+		: `${person.Birthplace} / ${person.Deathplace}`
+);
+
+const labelColor = (d, i) => (d.Sex == "F") ? "#cb2d6f" : "#14a098";
+
+const formatLabelData = (person, year) => ([
+       			{ text: year },
+       			{ color: labelColor(person),
+        		  text: person.Name 
+        		}, 
+        		{ text: formatPlace(person) }
+        	]);
 
 Promise.all([
 	d3.json("data/world.json"),
 	d3.json("data/oldest_people.json")
 ]).then((values) => {
-		const worldMap = topojson.presimplify(values[0]);
-		const oldPeople = values[1];
-		let stackedDuration = 0;
-		oldPeople.forEach(person => {
-			person["stackedDuration"] = stackedDuration +person.Duration;
-			stackedDuration = person["stackedDuration"];
-			person.Order = +person.Order - 1;
-		});
-
 		// prepare container
 		const container = d3.select(".map");
 		const size = container.node().getBoundingClientRect();
@@ -30,30 +32,12 @@ Promise.all([
 					.attr("height", height);
 
 		//prepare & render world map
-		const projection = d3.geoFahey()
-								.scale(width / 2 / Math.PI)
-      							.translate([width / 2, height / 2])
-
-		const geo = topojson.simplify(worldMap, minWeight);
-		const countries = topojson.feature(geo, geo.objects.countries).features;
-		const geoPath = d3.geoPath().projection(projection);
-
-		const mapContainer = svg.append("g")
-								.attr("class", "map")
-								.attr("transform", `translate(0,${ height * 0.15 })`);
-
-		mapContainer.append("g")
-        	.selectAll("path", ".country")
-            .data(countries)
-                .enter()
-            .append("path")
-            	.attr("class", "country")
-                .attr("d", geoPath);
-
+		const worldMap = topojson.presimplify(values[0]);
+		const projection = getMapProjection(width, height);
+		drawMap(worldMap, projection, svg);
 
         // render lifepath
         const offsets = {};
-
         const lifePath = (d) => {
         	const from = projection(d.BirthplaceCoords);
         	const till = projection(d.DeathplaceCoords);
@@ -61,23 +45,26 @@ Promise.all([
 
         	let qHeight = 0;
         	let offset = 0;
+        	let closedFlag = "";
         	if (d.Birthplace === d.Deathplace) {
         		offsets[offsetKey] = (offsets[offsetKey] || 10) + 5;
         		offset = offsets[offsetKey];
         		qHeight = from[1] + offset;
+        		closedFlag = "Z"
         	} else {
         		offsets[offsetKey] = (offsets[offsetKey] || 50) + 10;
         		offset = offsets[offsetKey];
         		qHeight = Math.max(from[1], till[1]) + offset;
         	}
 
-        	const path = `M ${from[0]} ${from[1]} C ${from[0] - offset} ${qHeight} ${till[0] + offset} ${qHeight} ${till[0]} ${till[1]}`;
+        	const path = `M ${from[0]} ${from[1]} C ${from[0] - offset} ${qHeight} ${till[0] + offset} ${qHeight} ${till[0]} ${till[1]} ${closedFlag}`;
         	d["path"] = path;
         	return path;
         };
 
-		const lifes = mapContainer
-        				.append("g")
+		const oldPeople = prepareSourceData(values[1]);
+		const lifes = svg
+						.append("g")
         				.selectAll("g", "life")
         				.data(oldPeople)
         					.enter()
@@ -98,6 +85,7 @@ Promise.all([
         	.append("path")
         		.attr("id", (d) => `textPath_${d.Order}`)
         		.attr("d", (d) => d.path);
+
         lifes
         	.filter((d) => d.Birthplace !== d.Deathplace)
         	.append("text")
@@ -111,16 +99,6 @@ Promise.all([
         let year = 1955;
         let counter = 0;
         let current = 0;
-
-       	const labelColor = (d, i) => (d.Sex == "F") ? "#cb2d6f" : "#14a098";
-       	const formatLabelData = (person, year) => ([
-       			{ text: year },
-       			{
-        			color: labelColor(oldPeople[current]),
-        			text: oldPeople[current].Name 
-        		}, 
-        		{ text: formatPlace(oldPeople[current]) }
-        	]);
 
         const labelContainer = svg
         				.append("g")
@@ -138,12 +116,9 @@ Promise.all([
         			.style("fill", d => d.color || "#dadada");
 
         const timer = setInterval(() => {
-
         	lifes
         		.transition(animDuration)
-        		.attr("opacity", (d) => {
-        			return (d.stackedDuration < counter) ? 1 : 0 
-        		});
+        		.attr("opacity", (d) => (d.reign.from < counter) ? 1 : 0);
 
         	lifes
         		.select("path")
@@ -153,7 +128,7 @@ Promise.all([
         	const prevYear = year;
         	year = Math.floor(1954 + counter);
         	let needUpdateLabel = prevYear !== year;
-        	if (oldPeople[current].stackedDuration < counter) {
+        	if (oldPeople[current].reign.till < counter) {
         		current = current + 1;
         		needUpdateLabel = true;
         		if (current == oldPeople.length) {
@@ -179,5 +154,39 @@ Promise.all([
 
         }, 200);
 
-
 	}).catch((e) => console.error(error))
+
+function prepareSourceData(data) {
+	let stackedDuration = 0;
+	data.forEach(person => {
+		person["reign"] = {
+			from: stackedDuration,
+			till: stackedDuration +person.Duration
+		};
+		stackedDuration = person.reign.till;
+		person.Order = +person.Order - 1;
+	});
+	return data;
+}
+
+function getMapProjection(width, height) {
+	return d3.geoFahey()
+				.scale(width / 2 / Math.PI)
+    			.translate([width / 2, height / 2]) 
+}
+
+function drawMap(worldMap, projection, container) {
+	const geo = topojson.simplify(worldMap, 5);
+	const countries = topojson.feature(geo, geo.objects.countries).features;
+	const geoPath = d3.geoPath().projection(projection);
+
+	const mapContainer = container.append("g").attr("class", "map")
+
+	mapContainer.append("g")
+       	.selectAll("path", ".country")
+        .data(countries)
+            .enter()
+        .append("path")
+          	.attr("class", "country")
+            .attr("d", geoPath);
+}

@@ -48,6 +48,7 @@ main {
 .life path {
 	stroke: tomato;
 	stroke-width: 5px;
+	stroke-linecap: round;
 	fill: none;
 }
 
@@ -70,12 +71,6 @@ main {
 
 .male text {
 	fill: : #14a098;
-}
-
-.life path.star {
-	fill: gold;
-	fill-opacity: 0.5;
-	stroke: none;
 }
 
 .label text {
