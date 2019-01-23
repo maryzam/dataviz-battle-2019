@@ -25,7 +25,7 @@ Promise.all([
 		const container = d3.select(".map");
 		const size = container.node().getBoundingClientRect();
 		const width = size.width - margin;
-		const height = size.height - margin;
+		const height = (size.height || size.width * 0.6) - margin;
 		const svg = container
 					.append("svg")
 					.attr("width", width)
