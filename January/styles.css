@@ -1,0 +1,87 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: content-box;
+	font-family: 'Vibur', cursive;
+	color: #dadada;
+	overflow: hidden;
+}
+
+html, body {
+	height: 100vh;
+	width: 100%;
+	background: black;
+}
+
+article {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+header, footer {
+    flex-shrink: 0;
+    text-align: center;
+    padding: 10px;
+    background: #000;
+}
+
+main {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.map {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.country {
+	fill: #333;
+	stroke: black;
+	stroke-width: 1px;
+}
+
+.life path {
+	stroke: tomato;
+	stroke-width: 5px;
+	stroke-linecap: round;
+	fill: none;
+}
+
+.life text {
+	font-size: 10px;
+	pointer-events: none;
+} 
+
+.female path {
+	stroke: #cb2d6f;
+}
+
+.male path {
+	stroke: #14a098;
+}
+
+.female text  {
+	fill: #cb2d6f;
+}
+
+.male text {
+	fill: : #14a098;
+}
+
+.label text {
+	text-anchor: middle;
+	fill: #dadada;
+}
+
+.label tspan.female {
+	fill: #cb2d6f;
+}
+
+.label tspan.male {
+	fill: : #14a098;
+}
