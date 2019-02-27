@@ -21,6 +21,8 @@ d3.csv("data/drugs.csv")
 							.attr("width", dim)
 							.attr("height", dim);
 
+		const tooltip = d3.select(".tooltip");
+
 		appendGooeyFilter(svg);
 
 		const sideSize = dim / Math.sqrt(2);
@@ -83,7 +85,20 @@ d3.csv("data/drugs.csv")
 				.enter()
 			.append("g")
 				.attr("class", "drug")
-				.attr("transform", d => `translate(${d.x}, ${d.y})`);
+				.attr("transform", d => `translate(${d.x}, ${d.y})`)
+				.on("mouseover", d => {
+					tooltip
+						.style("left", `${d3.event.pageX + 10}px`)
+						.style("top", `${d3.event.pageY }px`)
+						.style("display", "block");
+					tooltip.html(`<p><h2>${d.Drug}</h2>
+						</p><p>Dependence: ${d.Dependence}</p>
+						</p><p>Social harm: ${d.SocialHarm}</p>
+						</p><p>Physical harm: ${d.PhysicalHarm}</p>`)
+				})
+				.on("mouseout", d => {
+					tooltip.style("display", "none");
+				});
 
 		//background
 		const maxPleasure = d3.max(source, d => d.Pleasure);
@@ -118,8 +133,6 @@ d3.csv("data/drugs.csv")
 			.style("fill", "#FF2153");
 
 	});
-
-
 
 function appendGooeyFilter(svg) {
 	var filter = svg.append("defs").append("filter").attr("id","gooeyFilter");

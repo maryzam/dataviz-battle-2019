@@ -40,3 +40,29 @@ text {
 	font-size: 10px;
 	text-transform: uppercase;
 }
+
+p {
+	padding-top: 1em;
+}
+
+.tooltip {	
+	display: none;
+    position: absolute;			
+    text-align: left;			
+    max-width: 100px;					
+    padding: 2px;
+    font-size: 10px;			
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px;		
+}
+
+.tooltip p {
+	padding: 0px;
+}
+
+.tooltip h2 {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 2px;
+}
