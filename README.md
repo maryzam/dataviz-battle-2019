@@ -23,3 +23,9 @@ Dataset: *[Drug harm and Dependence](https://commons.wikimedia.org/wiki/File:Dev
 Dataviz: *[Physical Harm and Dependence by Drug](https://maryzam.github.io/dataviz-battle-2019/February/index.html)*
 
 About: To be honest, I'm not proud of this submission. Tha topic was very hart for me, but I tied to make it a bit more interesing than original visualization, rendering drag marks based on an additional information about their effect on a person.
+
+## March
+
+Challenge: *Visualize the National Solar Radiation Data Base*
+
+Dataset: *[Visualize the National Solar Radiation Data Base](https://rredc.nrel.gov/solar/old_data/nsrdb/1991-2005/tmy3/)*
