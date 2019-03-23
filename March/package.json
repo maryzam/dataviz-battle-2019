@@ -1,0 +1,15 @@
+{
+  "name": "cloud-mountains",
+  "version": "1.0.0",
+  "description": "\"Clound mountains cart based on TMY3 database\"",
+  "main": "src/index.js",
+  "author": "MaryZam",
+  "license": "MIT",
+  "dependencies": {
+    "kepler.gl": "^0.2.4",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
+    "react-palm": "^2.0.0",
+    "react-redux": "^6.0.1"
+  }
+}
